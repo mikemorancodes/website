@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111211">
+  <meta name="description" content="Privacy information for apps developed by Mike Moran.">
+  <title>App Privacy — Mike Moran</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #111211;
+      color: #f4f3ef;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      min-width: 320px;
+      min-height: 100vh;
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 50% 0, rgba(92, 112, 94, 0.12), transparent 38rem),
+        #111211;
+    }
+
+    a { color: #c1d7b9; text-underline-offset: 0.2em; }
+    a:hover { color: #e0edd9; }
+
+    .topbar {
+      width: min(100% - 48px, 960px);
+      margin: 0 auto;
+      padding: 26px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      border-bottom: 1px solid #292c29;
+    }
+
+    .wordmark {
+      color: #f4f3ef;
+      font-size: 0.95rem;
+      font-weight: 560;
+      letter-spacing: -0.035em;
+      text-decoration: none;
+    }
+
+    .wordmark span { color: #a9c5a5; }
+
+    nav { display: flex; gap: 26px; }
+
+    nav a {
+      color: #a4aaa2;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    nav a:hover, nav a[aria-current="page"] { color: #f4f3ef; }
+
+    main {
+      width: min(100% - 48px, 960px);
+      margin: 0 auto;
+      padding: clamp(36px, 6vw, 56px) 0 88px;
+    }
+
+    .intro {
+      max-width: 650px;
+      margin: 22px 0 0;
+      color: #a4aaa2;
+      font-size: 1.08rem;
+      line-height: 1.7;
+    }
+
+    section {
+      max-width: 720px;
+      margin-top: 54px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.28rem;
+      font-weight: 550;
+      letter-spacing: -0.035em;
+    }
+
+    p, li {
+      color: #a4aaa2;
+      font-size: 0.98rem;
+      line-height: 1.75;
+    }
+
+    section p { margin: 0 0 14px; }
+    ul { margin: 0; padding-left: 1.3rem; }
+    li + li { margin-top: 9px; }
+
+    .app-note {
+      margin-top: 23px;
+      padding: 24px;
+      border: 1px solid #303630;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .app-note h3 {
+      margin: 0 0 10px;
+      font-size: 1rem;
+      font-weight: 550;
+    }
+
+    .app-note p:last-child { margin-bottom: 0; }
+
+    footer {
+      width: min(100% - 48px, 960px);
+      margin: 0 auto;
+      padding: 22px 0 30px;
+      border-top: 1px solid #292c29;
+      color: #838982;
+      font-size: 0.82rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 520px) {
+      .topbar, footer { width: min(100% - 36px, 960px); }
+      main { width: min(100% - 36px, 960px); }
+      .app-note { padding: 21px 19px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="/">Mike Moran <span>{ }</span></a>
+    <nav aria-label="Main navigation">
+      <a href="/apps/support/">Support</a>
+      <a href="/apps/privacy/" aria-current="page">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="intro">This page describes general privacy practices for apps developed by Mike Moran. Features and data use can vary between apps, so any app-specific privacy information supplements this page and explains how that app works.</p>
+
+    <section>
+      <h2>Information and app features</h2>
+      <p>Apps may store information you enter or create while using their features. What information is involved, where it is stored, and whether it is shared will depend on the app. App-specific details will be provided in the app or its store listing when relevant.</p>
+      <p>Apps may use device features such as notifications or the system share menu. You can manage permissions through your device settings. When you choose to share information, the device or service you select will handle it under its own terms and privacy policy.</p>
+    </section>
+
+    <section>
+      <h2>DrinkingBuddy</h2>
+      <div class="app-note">
+        <h3>Data stored on your device</h3>
+        <p>DrinkingBuddy stores drink entries, daily records, and app preferences locally on your device. It uses local notifications for reminders. The app does not require an account or send this recorded information to a server operated by Mike Moran.</p>
+        <p>If you choose to share a progress summary, DrinkingBuddy opens your device’s share interface. The information is then handled by the app or person you choose to share it with.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>If you have a privacy question about one of the apps, email <a href="mailto:support@mikemorancodes.com?subject=Privacy%20question">support@mikemorancodes.com</a>. Please identify the app you are asking about.</p>
+    </section>
+  </main>
+
+  <footer>
+    This page covers general privacy information. App-specific disclosures and the privacy details shown in app stores should also be reviewed for the app you use.
+  </footer>
+</body>
+</html>
